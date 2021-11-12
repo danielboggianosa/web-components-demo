@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <script src="//unpkg.com/json-form-custom-element"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <title>Web Components</title>
+  </head>
+  <body class="container">
+    <h2>Example Form</h2>
+    <json-form
+      schema='{
+        "type":"string",
+        "title":"Hello",
+        "description":"A brief but helpful description of value",
+        "maxLength":5
+      }'
+      value='"world"'
+    ></json-form>
+    <hr>
+    <h2>Active Users</h2>
+    <my-users-container></my-users-container>
+  </body>
+</html>
